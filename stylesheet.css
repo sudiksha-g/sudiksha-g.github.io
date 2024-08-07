@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Removing unexpected gaps */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    /* Giving image path */
+    background: linear-gradient(rgba(0, 0, 0, 0.263), rgba(0, 0, 0, 0.263)), 
+                url('./images/website-background.jpg') no-repeat center / cover;
+    color: white;
+}
+
+.hero-image {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.side_by_side {
+    flex: 1;
+    margin: 20px;
+    position: relative
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container p {
+    margin-top: 10px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* editing individual elements */
+.hero-section .info h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section .info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section .info p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 70%;
+}
+
+.hero-section .info a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    border-radius: 2px;
+    font-size: 1rem;
+    padding: 0.5em 2em;
+    margin-top: 0.5rem;
+    color: blueviolet;
+    transition: color 0.3s ease; 
+}
+
+.hero-section .info a:hover {
+    color: black;
+}
+
+/* to use on any device (don't know what it'll be tested on) */
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 10px;
+    }
+
+    .hero-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side_by_side {
+        margin: 10px 0;
+    }
+}
